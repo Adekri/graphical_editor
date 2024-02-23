@@ -1,19 +1,19 @@
-package grafickyEditor;
+package graphical_editor;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-public abstract class GrObjekt {
+public abstract class Graphical_object {
     private int x;
     private int y;
 
-    public GrObjekt(int x, int y){
+    public Graphical_object(int x, int y){
         super();
         this.x=x;
         this.y=y;
     }
 
-    public abstract void vykresli(BufferedImage img, String nazev) throws IOException;
+    public abstract void paint(BufferedImage img, String name) throws IOException;
     public int getX() {
         return x;
     }
